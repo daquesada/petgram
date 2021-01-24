@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petgram</title>
+    <link href="/src/Icons/petgram.svg" rel="icon">
+</head>
+<body>
+    <div id="app">
+        <noscript>
+            <h1>this app needs javascript</h1>
+        </noscript>
+        <script>
+            if('serviceWorker' in navigator){
+                addEventListener('load',()=>{
+                    navigator.serviceWorker.register('/service-worker.js')
+                    .then(()=>{
+                        console.log('object')
+                    })
+                    .catch(()=>console.log('error'))
+                })
+            }
+        </script>
+    </div>
+</body>
+</html>
