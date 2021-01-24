@@ -6,11 +6,12 @@ import { Home } from "./Pages/Home";
 import { Redirect, Router } from "@reach/router";
 import { NavBar } from "./components/Navbar";
 import { User } from "./Pages/User";
+import { Favs } from "./Pages/Favs";
 import { NotRegisterUser } from "./Pages/NotRegisterUser";
 import { Context } from "./Context";
 import { NotFound } from "./Pages/NotFound";
 
-const Favs = lazy(() => import("./Pages/Favs"));
+// const Favs = lazy(() => import("./Pages/Favs"));
 
 export default function App() {
   const { isAuth } = useContext(Context);

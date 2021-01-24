@@ -18,9 +18,10 @@ module.exports = {
       description: "with petgram you can find any pet all over the world",
       background_color: "#fff",
       theme_color: "#b1a",
+      // start_url:,
       icons: [
         {
-          src: path.resolve("src/Icons/favicon.png"),
+          src: path.resolve("src/Icons/icon.png"),
           sizes: [96, 128, 192, 256, 384, 512],
         },
       ],
@@ -37,7 +38,7 @@ module.exports = {
           },
         },
         {
-          urlPattern: new RegExp("https://petgram-server-ebon.vercel.app/"),
+          urlPattern: new RegExp("https://petgramserver-api.vercel.app"),
           handler: "NetworkFirst",
           options: {
             cacheName: "api",
